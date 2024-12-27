@@ -1,0 +1,130 @@
+.profile {
+    min-height: 100vh;
+    background: url(/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px; 
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.profile-pic {
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile form h3 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.profile label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.profile label img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.profile input,
+.profile textarea {
+    padding: 10px;
+    min-width: 100%;
+    max-width: 100%; 
+    border: 1px solid #c9c9c9;
+    outline-color: #439938;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.profile form button {
+    border: none;
+    color: white;
+    background-color: #439938;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%; 
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .profile-pic {
+        max-width: 180px; 
+    }
+
+    .profile form {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .profile input,
+    .profile textarea {
+        min-width: 300px; 
+    }
+
+    .profile form button {
+        width: auto; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile-container {
+        min-width: 800px;
+        max-width: 1000px;
+        padding: 60px;
+    }
+
+    .profile-pic {
+        max-width: 200px; 
+    }
+
+    .profile form {
+        gap: 30px;
+    }
+
+    .profile input,
+    .profile textarea {
+        min-width: 400px; 
+    }
+
+    .profile form button {
+        width: 50%; 
+    }
+}
